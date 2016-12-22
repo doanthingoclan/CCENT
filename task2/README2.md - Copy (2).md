@@ -34,6 +34,68 @@ III. Giao thức UDP (user datagram protocol).
 |16-bit UDP length||16-bit UDP checksum|
 |data|
 
+III. Giao thức TCP
+- Hoạt động ở tầng transport của mô hình TCP/IP.
+- Giúp các ứng dụng truy nhập được vào tầng mạng
+- Là giao thức kiểu connection-oriented.
+- Hỗ trợ kiểu hoạt động là Full-duplex(là kiểu truyền có thể truyền- nhận cùng 1 thời điểm ).
+- Cơ chế kiểm tra lỗi.
+- Cơ chế đánh số thứ tự cho cái gói tin để ráp lại cho đúng ở đầu kia.
+- Cơ chế báo nhận (Acknowledgement) .
+- Cơ chế phục hồi dữ liệu.
+**Các trường của TCP header**
+|16-Bit source port||16-bit destination port|
+|32-bit sequence number|
+|32-bit acknowledgement number|
+|4-bit header length||resv||ns||cwr||ece||urg||ack||psh||rst||syn||fin||16-bit window size|
+|16- bit TCP checksum||16-bit urgent pointer|
+|Options|
+IV. Ứng dụng của giao thức TCP/IP
+- Truyền file : FTP,TFTP,Network file systerm.
+- Thư điện tử: SMTP(Simple mail transfer protocol).
+- Truy nhập từ xa : Telnet,rlogin.
+- Quản lí mạng : SNMP(simple network management protocol).
+- Quản lí tên Việt: Domain Name Systerm.
+** Cơ chế Mapping layer 3 to layer 4**
+|Ver.|IHL|Service Type|packet length|
+|Identification|Flag|Frag.Offset|
+|Time to Live|Protocol|Header Checksum|
+|Source Address|
+|Destination Address|
+|Options|Padding|
+**Mapping Layer 4 to applications**
+-FTP sử dụng kết nối TCP port "21".
+-Telnet sử dụng kết nối TCP port "23"
+-HTTP sử dụng kết nối TCP port "80"
+-TFTP sử dụng kết nối UDP port "69"
+-SNMP sử dụng kết nối UDP port "161"
+-DNS sử dụng kết nối cả hai TCP và UDP port "53".
+**Cơ chế bắt tay 3 bước**
+-Bước 1: Host A gửi gói tin TCP có SYN được bật lên với số thứ tự được đánh là 100 (SEQ=100 CTL= SYN)
+-Bước 2: Gói tin được gửi qua bên host B và khi nhận được gói tin có SYN được bật lên thì nó cũng gửi ngược
+lại một gói tin có SYN ,ACK được bật lên (SEQ= 300 ACK = 101 CTL = SYN,ACK)
+-Bước 3: Kết nối đã được thiết lập thì host A phải gửi 1 gói tin báo cho host B (SEQ= 101 ACK = 301 CTL = SYN,ACK).
+**Cơ chế Flow Control của giao thức TCP**
+Giả sử máy A gửi quá nhiều dữ liệu cho máy B , máy B phải Buffer dữ liệu vào trong bộ đệm để xử lí đến lúc bộ đệm đã đầy
+thì máy B phải gửi tín hiệu đến máy A stop truyền dữ liệu và máy A nhận được tín hiệu sẽ stop không truyền dữ liệu nữa
+và lúc này máy B đg xử lí dần dân Segments trong bộ đệm của nó cho đến khi Buffer trống sau đó máy B sẽ gửi tín hiệu sẵn
+sàng qua máy A và tiếp tục truyền lại dữ liệu như ban đầu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
