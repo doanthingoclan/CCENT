@@ -31,7 +31,7 @@ Mật Mã?**
 
 - Có các topology mạng sau : Bus Topology, Star topology, Ring topology và các dạng mở rộng khác.
 
-- Topology đang được sử dụng tại Phòng thực hành tâng 5 - Học viện kỹ thuật mật mã .
+- Topology đang được sử dụng tại Phòng thực hành tâng 5 - Học viện kỹ thuật mật mã là star topology.
 
 **4. Cách mở rộng mạng hình sao, các nguyên tắc cơ bản.**
 
