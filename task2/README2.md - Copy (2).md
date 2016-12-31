@@ -81,6 +81,58 @@ thì máy B phải gửi tín hiệu đến máy A stop truyền dữ liệu và
 và lúc này máy B đg xử lí dần dân Segments trong bộ đệm của nó cho đến khi Buffer trống sau đó máy B sẽ gửi tín hiệu sẵn
 sàng qua máy A và tiếp tục truyền lại dữ liệu như ban đầu.
 
+###Bài 4. Ethernet Lan.
+**I. Thành phần cơ bản của mạng LAN.
+
+-Computers: PCs, Servers.
+-Interconnections: NICs, Media.
+-Network devices: Hubs, Switches, Routers.
+-Protocols: Ethernet, IP, ARP, DHCP.
+
+**II. Các ứng dụng của mạng LAN**
+- Chía sẻ dữ liệu và ứng dụng.
+-Chia sẻ những tài nguyên(resources).
+-Cung cấp đường kết nối đến 1 mạng khác.
+**III. Kích thước mạng LAN.**
+- Mạng LAN có thể là 1 mạng có kích thước rất nhỏ như: Mạng SOHO LAN(Small Office Home Office) tượng trưng cho 1 cá thể gồi tại nhà
+chỉ gồm 1 or 2 máy tính kết nối với con switch .
+- Mạng LAN có thể là mạng có kích thước cực kì lớn như 1 mạng của doanh nghiệp chẳng hạn như: Enterprise LAN. Mạng doah nghiệp này có thể bao gồm routers, switchs và rất nhiều loại PCs, Users,..đấu vời trong 1 hệ thống mạng LAN.
+**IV. LAN Standards( Các chuẩn mạng LAN).**
+-Tập trung chủ yếu ở 2 lớp OSI: Data Link Layer và Physical Layer
++ Data Link: gồm 2 lớp LLC Sublayer(chuyên lo giao tiếp với hệ thống Layer 3) và MAC SubLayer(chuyên lo truy nhập và điều khiển vào đường truyền vật lý ở phía dưới).
++ Một số chuẩn mạng LAN chạy từ Physical Layer đến hết Data Link Layer còn một số khác chỉ dừng lại ở lớp MAC Sublayer .
+
+https://www.youtube.com/watch?v=TAbvgEuir6w 8:00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cs
+
+
+
 
 
 
