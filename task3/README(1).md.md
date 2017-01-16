@@ -43,7 +43,7 @@
 >-	SNMP: 161.
 
 
-3. Mạng Ethernet là gì? Kể tên các đặc trưng kỹ thuật của công nghệ mạng này.
+**3. Mạng Ethernet là gì? Kể tên các đặc trưng kỹ thuật của công nghệ mạng này.**
 
 ***Trả lời***:
 
@@ -57,11 +57,11 @@
 >- giao thức CSMA/CD
 >- gói thông tin có độ dài từ 64-1518 byte
 
-4. Địa chỉ sau là địa chỉ gì, qua đó bạn biết những thông tin gì (cụ thể): e8-94-f6-4a-55-3c
+**4. Địa chỉ sau là địa chỉ gì, qua đó bạn biết những thông tin gì (cụ thể): e8-94-f6-4a-55-3c**
 
 >- e8-94-f6-4a-55-3c là địa chỉ MAC; địa chỉ e8-94-f6 : mã số nhà sản xuất TP-LINK TECHNOLOGIES CO.,LTD; điạ chỉ 4a-55-3c: là số seri được nhà sản xuất.
 
-5. Có mấy chuẩn bấm cáp cho đầu cáp RJ-45. Kể tên thứ tự màu sắc ứng với mỗi chuẩn.
+**5. Có mấy chuẩn bấm cáp cho đầu cáp RJ-45. Kể tên thứ tự màu sắc ứng với mỗi chuẩn.**
 
 >- Có 2 chuẩn bấm đó là: bấm thẳng và bấm chéo 
 
